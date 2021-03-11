@@ -1,5 +1,5 @@
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
+    def longestPalindrome(self, s: str):
         res = ""
         for i in range(len(s)):
             # odd case, like "aba"
@@ -11,8 +11,8 @@ class Solution:
             if len(tmp) > len(res):
                 res = tmp
         return res
- 
-    # get the longest palindrome, l, r are the middle indexes   
+
+    # get the longest palindrome, l, r are the middle indexes
     # from inner to outer
     def helper(self, s, l, r):
         while l >= 0 and r < len(s) and s[l] == s[r]:

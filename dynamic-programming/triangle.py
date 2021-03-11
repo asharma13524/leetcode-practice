@@ -1,5 +1,5 @@
 class Solution:
-    def minimumTotal(self, triangle: List[List[int]]) -> int:
+    def minimumTotal(self, triangle: List[List[int]]):
         rows = len(triangle)
         cols = len(triangle[-1])
         if len(triangle) == 1:
